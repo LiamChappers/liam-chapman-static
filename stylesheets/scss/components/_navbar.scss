@@ -1,0 +1,224 @@
+.nav { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 5;
+    transition: 0.2s;
+  
+    &.solid-bg {
+      background-color: $white;
+      transition: 0.2s;
+      box-shadow: $boxShadow;
+    }
+  
+  
+    .nav-header {
+      display: inline;
+      z-index: 2;
+      position: relative;
+  
+      .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: $darktext;
+        padding: 10px 10px 10px 10px;
+        
+  
+        .nav-logo {
+          background-image: url('../../resources/images/logo/liam-chapman-logo.svg');
+          background-repeat: no-repeat;
+          background-size: 250px;
+          display: block;
+          height: 70px;
+          width: 250px;
+          transition: 0.2s;
+  
+          img {
+            width: 150px;
+          }
+        }
+  
+        
+      }
+    }
+  
+    .nav-btn {
+      display: none;
+  
+      @media (max-width:768px) {
+        display: inline-block;
+        height: 80px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 2;
+  
+        label {
+          display: inline-block;
+          width: 50px;
+          margin-right: 5px;
+          padding: 25px 13px;
+          cursor: pointer;
+  
+          &:hover {
+            color: rgba($darktext, 0.8);;
+          }
+          
+          &:active {
+            color: rgba($darktext, 0.6);;
+          }
+  
+          span {
+            display: block;
+            width: 25px;
+            height: 5px;
+            border-bottom: 2px solid $darkGrey;
+            transition: 0.2s;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  
+    &.active-nav {
+      .nav-header {
+        .nav-title {
+          .nav-logo {
+            @media (max-width:768px) {
+            background-image: url('../../resources/logo/pixsel-logo-white.png');
+            transition: 0.2s;
+            }
+          }
+        }
+      }
+  
+      .nav-btn {
+        label {
+          position: relative;
+          span {
+            border-top: 2px solid $white;
+            transition: 0.2s;
+            position: absolute;
+            top: 24px;
+  
+            &:first-child {
+              transform: rotate(45deg);
+            }
+  
+            &:nth-child(2) {
+              transform: rotate(-45deg);
+              left: 18px;
+            }
+  
+            &:last-child { 
+              display: none;
+            }
+          }
+        }
+      }
+  }
+  
+    
+  
+    .nav-links {
+      display: inline;
+      float: right;
+      font-size: 16px;
+      transition: 0.2s;
+  
+      a {
+        display: inline-block;
+        padding: 27px 30px 13px 30px;
+        text-decoration: none;
+        color: $darktext;
+        font-weight: 700;
+  
+        &:hover {
+          color: rgba($darktext, 0.8);;
+        }
+        
+        &:active {
+          color: rgba($darktext, 0.6);;
+        }
+      }
+  
+      @media (max-width:768px) {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: $background;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 0px;
+        left: 0px;
+        transition: 0.2s;
+        font-size: 22px;
+        
+  
+        a {
+          display: block;
+          width: 100%;
+          text-align: center;
+          color: $darktext;
+          padding: 27px 10px 13px 10px;
+  
+          &:first-child {
+            margin-top: 80px;
+          }
+        }
+      }
+    }
+  
+    #nav-check {
+      display: none;
+    }
+  
+    @media (max-width:768px) {
+      #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+        transition: 0.3s;
+      }
+  
+      #nav-check:checked ~ .nav-links {
+          transition: 0.3s;
+            height: 100vh;
+            overflow-y: auto;
+            transition: 0.2s;
+
+            
+      }
+
+      #nav-check:checked ~ .nav-btn {
+        label {
+            span {
+                border-top: 2px solid $white;
+                transition: 0.2s;
+                position: absolute;
+                top: 24px;
+      
+                &:first-child {
+                  transform: rotate(45deg);
+                  top: 35px;
+                }
+      
+                &:nth-child(2) {
+                  transform: rotate(-45deg);
+                  left: 11px;
+                  top: 35px;
+                  border-top: 2px solid transparent;
+                    
+                }
+      
+                &:last-child { 
+                  display: none;
+                }
+              }
+            
+        }
+      }
+    } 
+} 

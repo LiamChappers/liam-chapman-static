@@ -1,0 +1,56 @@
+
+
+.btn {
+    width: 100%;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: $boxShadow;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+
+    &.primary-btn {
+        background: $primaryGradient;
+        color: $white;
+        
+
+        &:hover {
+            background: $primaryGradientHover;
+        }
+
+        &:active {
+            background: $primaryGradientActive;
+        }
+    }
+
+    &.secondary-btn {
+        background: $secondaryGradient;
+        margin-top: 12px;
+
+        &:hover {
+            background: $secondaryGradientHover;
+        }
+
+        &:active {
+            background: $secondaryGradientActive;
+        }
+    }
+
+    &.third-btn {
+        background: $thirdGradient;
+        color: $white;
+        margin-top: 12px;
+        transition: 0.2s;
+
+        &:hover {
+            background: $thirdGradientHover;
+        }
+
+        &:active {
+            background: $thirdGradientActive;
+        }
+    }
+}

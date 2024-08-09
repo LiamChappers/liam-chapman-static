@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Liam-Chapman-Mono';
+    src: url('../../resources/fonts/IBMPlexMono/IBMPlexMono-Regular.woff2') format('woff2'),
+            url('../../resources/fonts/IBMPlexMono/IBMPlexMono-Regular.woff') format('woff'), 
+            url('../../resources/fonts/IBMPlexMono/IBMPlexMono-Regular.eot'),
+            url('../../resources/fonts/IBMPlexMono/IBMPlexMono-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../../resources/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liam-Chapman-Mono-Bold';
+    src: url('../../resources/fonts/IBMPlexMonoBold/IBMPlexMono-Bold.woff2') format('woff2'),
+            url('../../resources/fonts/IBMPlexMonoBold/IBMPlexMono-Bold.woff') format('woff'), 
+            url('../../resources/fonts/IBMPlexMonoBold/IBMPlexMono-Bold.eot'),
+            url('../../resources/fonts/IBMPlexMonoBold/IBMPlexMono-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../../resources/fonts/IBMPlexMonoBold/IBMPlexMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liam-Chapman-Sans';
+    src: url('../../resources/fonts/IBMPlexSans/IBMPlexSans-Regular.woff2') format('woff2'),
+            url('../../resources/fonts/IBMPlexSans/IBMPlexSans-Regular.woff') format('woff'), 
+            url('../../resources/fonts/IBMPlexSans/IBMPlexSans-Regular.eot'),
+            url('../../resources/fonts/IBMPlexSans/IBMPlexSans-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../../resources/fonts/IBMPlexSans/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liam-Chapman-Sans-Bold';
+    src: url('../../resources/fonts/IBMPlexSansBold/IBMPlexSans-Bold.woff2') format('woff2'),
+            url('../../resources/fonts/IBMPlexSansBold/IBMPlexSansBold.woff') format('woff'), 
+            url('../../resources/fonts/IBMPlexSansBold/IBMPlexSans-Bold.eot'),
+            url('../../resources/fonts/IBMPlexSansBold/IBMPlexMSans-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../../resources/fonts/IBMPlexSansBold/IBMPlexSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+    font-display: swap;
+}
+
+.nav {
+    font-family: 'Liam-Chapman-Mono';
+}
+
+header {
+
+    .text{
+
+        h1 {
+            font-size: 28px;
+            font-family: 'Liam-Chapman-Sans-Bold';
+            color: $darktext;
+        }
+        p {
+            font-size: 16px;
+            font-family: 'Liam-Chapman-Sans';
+            color: $darktext;
+
+            strong {
+                font-family: 'Liam-Chapman-Sans-Bold';
+            }
+        }
+
+        a {
+            font-family: 'Liam-Chapman-Mono';
+            font-size: 16px;
+
+            &:last-of-type {
+                font-family: 'Liam-Chapman-Mono-Bold';
+                color: $white;
+            }
+        }
+    }
+    
+}
+
+article {
+    h2 {
+        font-family: 'Liam-Chapman-Sans-Bold';
+        font-size: 24px;
+    }
+
+    h3 {
+        font-family: 'Liam-Chapman-Mono-Bold';
+        font-size: 28px;
+    }
+
+    p {
+        font-family: 'Liam-Chapman-Sans';
+        font-size: 16px;
+    }
+
+    &.my-work {
+        color: $darktext;
+    }
+
+    &.section-fill {
+        color: $white;
+    }
+
+    &.get-in-touch {
+        form {
+        font-size: 16px;
+        }
+
+        input, textarea {
+            font-family: 'Liam-Chapman-Sans';
+            font-size: 16px;
+        }
+
+        button {
+            font-family: 'Liam-Chapman-Mono-Bold';
+            color: $white;
+        }
+
+        .get-in-touch-links a {
+            color: $darktext;
+            font-size: 16px;
+            font-family: 'Liam-Chapman-Mono';
+        }
+    }
+}
+
+footer {
+    font-family: 'Liam-Chapman-Mono';
+    font-size: 12px;
+    color: $darktext;
+
+}
+
+.btn {
+    font-size: 16px;
+    font-family: 'Liam-Chapman-Mono';
+}
+
+.work-page {
+    .section-fill {
+        h4 {
+            font-family: 'Liam-Chapman-Mono';
+            font-size: 20px;
+        }
+
+        p {
+        
+             font-family: 'Liam-Chapman-Sans';
+             font-size: 16px;
+        
+        }
+    }
+    
+}
+
+#myServices {
+    h5 {
+        font-family: 'Liam-Chapman-Sans-Bold';
+        font-size: 18px;
+    }
+
+    ul {
+        font-family: 'Liam-Chapman-Sans';
+        font-size: 16px;
+    }
+}
+
+  @media (min-width:960px) {
+    header {
+        .text{
+            h1 {
+                font-size: 48px;
+            }
+
+            P {
+                font-size: 24px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    article {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 40px;
+        } 
+
+        p {
+            font-size: 18px;
+        }
+
+        .btn {
+            font-size: 18px;
+            font-family: 'Liam-Chapman-Mono';
+          }
+    }
+
+    #myServices {
+        h5 {
+            font-family: 'Liam-Chapman-Sans-Bold';
+            font-size: 24px;
+        }
+    
+        ul {
+            font-family: 'Liam-Chapman-Sans';
+            font-size: 18px;
+        }
+    }
+  }
